@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SQLALCHEMY - PYTHON</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
+  </head>
+  <body>
+  	<h2>Prácticando base de datos</h2></br></br>
+    {% block content %}
+    {% endblock %}
+
+</br>
+</br>
+<a href="/"> <button> Consultar usuario </button> </a>
+</br></br>
+<a href="{{ url_for('registrar') }}"> <button> Registrar usuario </button> </a>
+</br></br>
+<a href="{{ url_for('login') }}"> <button> Iniciar Sesión </button> </a>
+
+
+  </body>
+</html>

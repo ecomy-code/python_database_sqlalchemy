@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Consultar si existe un usuario X</h1>
+<form method="get" action="{{ url_for('consultar') }}">
+	<p><input type="text" name="nickname"></p>
+	<input type="submit" value="Consultar">
+</form>
+
+</br>
+</br>
+<a href="/"> <button> Consultar usuario </button> </a>
+</br></br>
+<a href="{{ url_for('registrar') }}"> <button> Registrar usuario </button> </a>
+</br></br>
+<a href="{{ url_for('login') }}"> <button> Iniciar Sesión </button> </a>
+{% endblock %}
